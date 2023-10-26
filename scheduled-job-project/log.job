@@ -1,0 +1,21 @@
+{
+    "expression": "0/10 * * * * ?",
+    "group": "dirigible-defined",
+    "handler": "scheduled-job-project/handler.mjs",
+    "description": "Scheduled Log Job",
+    "parameters": [
+        {
+            "name": "severity",
+            "type": "choice",
+            "defaultValue": "",
+            "choices": "Info,Warning,Error",
+            "description": "The log severity"
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "defaultValue": "",
+            "description": "The log message"
+        }
+    ]
+}

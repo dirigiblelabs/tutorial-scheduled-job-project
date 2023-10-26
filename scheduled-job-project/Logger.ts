@@ -32,7 +32,7 @@ export class Logger {
     }
 
     private static saveLogEvent(logData: LogData) {
-        const sql = `insert into LOG_EVENTS ("LOG_SEVERITY", "LOG_MESSAGE", "LOG_DATE") values (?, ?, ?)`;
+        const sql = `insert into LOG_EVENTS ("LOG_SEVERITY", "LOG_MESSAGE", "LOG_TIMESTAMP") values (?, ?, ?)`;
         const queryParameters = [logData.severity, logData.message, logData.date];
 
         update.execute(sql, queryParameters, null);

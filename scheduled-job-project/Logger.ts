@@ -35,7 +35,7 @@ export class Logger {
         const sql = `insert into LOG_EVENTS ("LOG_SEVERITY", "LOG_MESSAGE", "LOG_TIMESTAMP") values (?, ?, ?)`;
         const queryParameters = [logData.severity, logData.message, logData.date];
 
-        update.execute(sql, queryParameters, null);
+        update.execute(sql, queryParameters);
     }
 
     private static toDateString(date: Date): string {

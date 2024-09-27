@@ -1,6 +1,6 @@
 {
     "expression": "0/10 * * * * ?",
-    "group": "dirigible-defined",
+    "group": "defined",
     "handler": "scheduled-job-project/handler.mjs",
     "description": "Scheduled Log Job",
     "parameters": [

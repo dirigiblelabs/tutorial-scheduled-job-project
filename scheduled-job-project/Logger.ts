@@ -1,4 +1,4 @@
-import { update } from "@dirigible/db";
+import { update } from "sdk/db";
 
 export enum LogDataSeverity {
     INFO = 'Info',
